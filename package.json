@@ -4,8 +4,7 @@
   "description": "trabajar con asinncronismo en JavaScript",
   "main": "src/index.js",
   "scripts": {
-    
-    "callback":"node src/callbacks/index.js"
+    "callback": "node src/callbacks/index.js"
   },
   "keywords": [
     "callbacks",
@@ -13,5 +12,8 @@
     "async"
   ],
   "author": "Aldair Avalos <aldair.avalos.2000@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
