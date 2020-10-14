@@ -8,8 +8,12 @@
 
 // //instalando dependencia para que jale el node httpandxmlrequest, es un objeto
 // //Creado por Microsoft
+<<<<<<< HEAD
 let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest
 let API = "https://rickandmortyapi.com/api/character/"
+=======
+// let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest
+>>>>>>> 48531d1e8b6209ebcfb9b504c1579a7018289f2f
 
 // //Chale sigo sin entender que queremos o que esta pasando
 // function fetchData(url_api, callback){
@@ -60,7 +64,10 @@ let API = "https://rickandmortyapi.com/api/character/"
 function fetchData(url_api, callback){
     let xhttp = new XMLHttpRequest()
     xhttp.open('GET', url_api, true)
+<<<<<<< HEAD
     xhttp.onreadystatechange = (event) => {
+=======
+>>>>>>> 48531d1e8b6209ebcfb9b504c1579a7018289f2f
     if (xhttp.readyState === 4){
         if(xhttp.status === 200){
             callback(null, JSON.parse(xhttp.responseText))
@@ -69,6 +76,7 @@ function fetchData(url_api, callback){
             return callback(error, null)
         }
  
+<<<<<<< HEAD
         
     }
   }
@@ -89,3 +97,7 @@ fetchData(API, (error1, data1) => {
         })
     })
 })
+=======
+    }
+}
+>>>>>>> 48531d1e8b6209ebcfb9b504c1579a7018289f2f
